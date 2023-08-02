@@ -1,0 +1,138 @@
+.app .home {
+  height: 103vh;
+  background-color: var(--pink);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+  .main-container {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+    padding: 2rem 5rem;
+    .background-images {
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .background2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .brand-container {
+      .toggle {
+        display: none;
+      }
+    }
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            color: var(--secondary-color);
+          }
+        }
+      }
+      .buttons-container {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          background: transparent;
+          padding: 0.5rem 2rem;
+          border-radius: 2rem;
+          border: 1px solid var(--line);
+          font-family: var(--font-family);
+          color: var(--secondary-color);
+        }
+        .btn:nth-child(1) {
+          border: none;
+        }
+      }
+    }
+  }
+  .hero-container {
+    height: 100%;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      height: 90%;
+      gap: 2rem;
+      justify-content: center;
+      .title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .title-image {
+        display: none;
+      }
+      .title {
+        color: #fff;
+        font-size: 3.1rem;
+        margin: 0;
+      }
+      .description {
+        color: var(--secondary-color);
+        font-size: 1.1rem;
+      }
+
+      .cta-btn {
+        color: #fff;
+        background-color: var(--pink);
+        padding: 0.7rem 3.4rem;
+        border-radius: 2rem;
+        border: none;
+        font-family: var(--font-family);
+      }
+    }
+  }
+}
+
+.home-images {
+  position: absolute;
+  top: 15vh;
+  left: 54%;
+  .image-container {
+    position: relative;
+    width: 45vw;
+    height: 75vh;
+    .wrapper {
+      background: url("/assets/home1.svg") no-repeat center center/ cover;
+      width: 114%;
+      height: 117%;
+    }
+    // .image1 {
+    //   position: absolute;
+    //   img {
+    //     max-inline-size: 100%;
+    //   }
+    //}
+    .image2 {
+      position: absolute;
+      top: 18vh;
+      left: -5vw;
+      img {
+        max-inline-size: 100%;
+      }
+    }
+  }
+}

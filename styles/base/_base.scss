@@ -8,3 +8,35 @@
   --background: #eff2ff;
   --line: #2a407c;
 }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  font-family: var(--font-family);
+  background-color: var(--background);
+  position: relative;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: var(--primary-color);
+  &-thumb {
+    background-color: var(--pink);
+    border-radius: 1rem;
+  }
+}

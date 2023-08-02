@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analytics</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/styles/index.css" />
   </head>
   <body>
     <main class="app">
       <section class="home">
         <div class="main-container">
           <div class="background-images">
-            <img src="./assets/background.svg" alt="background" class="image" />
+            <img
+              src="./assets/background.svg"
+              alt="background"
+              class="background"
+            />
 
             <img
               src="./assets/background2.svg"
@@ -20,11 +26,13 @@
           </div>
 
           <nav>
-            <div class="logo-wrapper">
-              <img src="/assets/logo.svg" alt="logo" />
-            </div>
-            <div class="toggle">
-              <img src="/assets/toggle.svg" alt="toggle" />
+            <div class="brand-container">
+              <div class="logo-wrapper">
+                <img src="/assets/logo.svg" alt="logo" />
+              </div>
+              <div class="toggle">
+                <img src="/assets/toggle.svg" alt="toggle" />
+              </div>
             </div>
 
             <div class="menu-container">
@@ -43,28 +51,32 @@
             </div>
           </nav>
           <div class="hero-container">
-            <div class="hero-content">
-              <h1 class="title">Monitor you business on real-time dashbord</h1>
+            <div class="content">
+              <div class="title-container">
+                <img src="./assets/home1.svg" alt="home" class="title-image" />
+                <h1 class="title">
+                  Monitor you business on real-time dashbord
+                </h1>
 
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-                dignissimos officiis ratione eligendi doloremque. Voluptates
-                temporibus quidem delectus placeat veritatis odio quas officiis
-                ullam odit unde autem accusamus, impedit ea. Harum doloremque
-                voluptate impedit, eum nam ullam error minus numquam expedita
-                obcaecati quod pariatur, similique quam! Cum voluptates sequi,
-                iste quidem ullam nisi blanditiis ipsam sapiente vitae ea quod
-                mollitia?
-              </p>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  dignissimos officiis ratione eligendi doloremque. Voluptates
+                  temporibus quidem delectus placeat veritatis odio quas
+                </p>
+              </div>
               <button class="cta-btn">Try for free</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="home-image-containers">
-        <img src="./assets/home1.svg" alt="home1" class="home1" />
-        <img src="./assets/home2.svg" alt="home2" class="home2" />
+      <section class="home-images">
+        <div class="image-container">
+          <div class="wrapper">
+            <!-- <img src="./assets/home1.svg" alt="home1" class="image1" /> -->
+          </div>
+          <img src="./assets/home2.svg" alt="home2" class="image2" />
+        </div>
       </section>
     </main>
   </body>
